@@ -1,0 +1,63 @@
+<ion-grid>
+  <ion-row class="show-mobile">
+    <ion-col>
+      <div class="logo-content">
+        <ion-img src="../../../assets/logo.svg" alt="Logo" ></ion-img>
+        <ion-list lines="none">
+          <ion-item>
+            <ion-label>Link One</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Link Two</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Link Three</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Link Four</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Link Five</ion-label>
+          </ion-item>
+        </ion-list>
+      </div>
+    </ion-col>
+  </ion-row>
+  <ion-row class="show-mobile">
+    <ion-col>
+      <div class="subscribe-form">
+        <div class="title">Subscribe</div>
+
+        <ion-input class="subscribe" aria-label="Text" placeholder="Enter your email"></ion-input>
+        
+        <ion-button [routerLink]="['/subscribe']" class="subscribe">Subscribe</ion-button>
+        <p>By subscribing you agree to with our Privacy Policy</p>
+      </div>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <div class="footer-links">
+        <div class="divider"></div>
+        <div class="links">
+          <ion-list lines="none">
+            <ion-item>
+              <ion-label>Privacy Policy</ion-label>
+            </ion-item>
+            <ion-item>
+              <ion-label>Terms of Service</ion-label>
+            </ion-item>
+            <ion-item>
+              <ion-label>Cookies Settings</ion-label>
+            </ion-item>
+          </ion-list>
+
+          <div class="reserved-text">
+            © 2023 Relume. All rights reserved.
+          </div>
+        </div>
+        
+      </div>
+    </ion-col>
+  </ion-row>
+</ion-grid>

@@ -10,4 +10,8 @@ export const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full',
   },
+  {
+    path: 'subscribe',
+    loadComponent: () => import('./subscribe/subscribe.page').then( m => m.SubscribePage)
+  },
 ];

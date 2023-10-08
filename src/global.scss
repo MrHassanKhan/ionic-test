@@ -24,3 +24,161 @@
 @import "@ionic/angular/css/text-alignment.css";
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
+
+ion-header {
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+}
+
+ion-toolbar {
+  height: 96px;
+  display: flex;
+  padding: 0 110px;
+
+  @media only screen and (max-width: 600px) {
+    height: 72px;
+    padding: 0;
+  }
+}
+
+ion-button.primary {
+  --background: white;
+  --color: #896af9;
+
+  --border-radius: 24px;
+  --border-color: #ab95f9;
+  --border-style: solid;
+  --border-width: 1px;
+  --box-shadow: 4px 4px 0-1px #896af9;
+
+  --ripple-color: #896af9;
+
+  --padding-top: 20px;
+  --padding-left: 23px;
+  --padding-bottom: 20px;
+  --padding-right: 22px;
+
+  font-size: 23px;
+  font-weight: 900;
+  line-height: 38px;
+  text-transform: capitalize;
+}
+
+
+ion-button.subscribe {
+  --background: white;
+  --color: black;
+
+  --border-color: black;
+  --border-style: solid;
+  --border-width: 1px;
+
+  --ripple-color: black;
+
+  --padding-top: 12px;
+  --padding-left: 24px;
+  --padding-bottom: 12px;
+  --padding-right: 24px;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+
+ion-input.subscribe {
+  --border-width: 1px;
+  --border-color: black;
+  --background: white;
+  --color: black;
+  --placeholder-color: #505050;
+  --padding-bottom: 12px;
+  --padding-end: 12px;
+  --padding-start: 12px;
+  --padding-top: 12px;
+
+  .input-wrapper {
+    border: 1px solid black;
+  }
+}
+
+ion-input.subscribe2 {
+  --border-width: 1px;
+  --border-radius:8px;
+  --border-color: #d0d5dd;
+  --background: white;
+  --color: #344054;
+  --placeholder-color: #667085;
+  --padding-bottom: 2px;
+  --padding-end: 6px;
+  --padding-start: 6px;
+  --padding-top: 2px;
+  --highlight-color: #d0d5dd;
+
+  .input-wrapper {
+    border: 1px solid #d0d5dd;
+  }
+}
+
+ion-select.primary {
+  border: 1px solid #d0d5dd;
+  border-radius:8px;
+  overflow: hidden;
+  --background: white;
+  --color: #344054;
+  --placeholder-color: #667085;
+  --padding-bottom: 2px;
+  --padding-end: 14px;
+  --padding-start: 14px;
+  --padding-top: 2px;
+  --highlight-color: #d0d5dd;
+  &::part(container) {
+    width: 100%;
+  }
+}
+
+ion-radio-group.primary {
+  ion-radio {
+    width: 100%;
+    border: 1px solid #d0d5dd;
+    border-radius: 8px;
+    padding: 10px 14px;
+    --color: #344054;
+    --color-checked: #6633ff;
+
+    &::part(mark) {
+      background: none;
+      padding-bottom: 20px;
+      &::after {
+        content: "\2713";
+        
+      }
+    }
+  }
+  .radio-checked {
+    border-color: #6633ff;
+  }
+}
+
+
+
+.flex {
+  display: flex;
+}
+.flex-row {
+  flex-direction: row;
+}
+.flex-col {
+  flex-direction: column;
+}
+.gap-13xl{
+  gap: 32px;
+} 
+.gap-9xs { gap: 4px;}
+.gap-5xs { gap:8px;}
+.gap-5xl {gap:24px;}
+.gap-mid{gap: 17px;}
+.gap-xs{gap: 12px;}
+.gap-7xs{gap: 6px;}
+
+

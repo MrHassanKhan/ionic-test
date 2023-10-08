@@ -1,0 +1,252 @@
+ion-grid {
+    &.subscribe {
+        background-image: url("../../assets/subscribe/v105163b-2@2x.png");
+        background-repeat: no-repeat;
+        background-position: top;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 112px 1px;
+
+        @media only screen and (max-width: 670px) {
+            background-image: none;
+            background-size: none;
+            padding: 40px 16px;
+        }
+
+        >ion-row {
+            width: 100%;
+            max-width: 1012px;
+            border-radius: 24px;
+            border: 1px solid #BFB8D7;
+            overflow: hidden;
+
+            ion-col {
+                &.subscribe {
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    padding: 32px;
+                    gap: 72px;
+                    background-color: white;
+
+                    .form {
+                        // display: flex;
+                        // flex-direction: column;
+                        gap: 16px;
+
+                        .header {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-start;
+                            padding: 1px 0;
+                            gap: 2px;
+
+                            .title {
+                                font-weight: 700;
+                                font-size: 24px;
+                                line-height: 32px;
+                            }
+
+                            .subtitle {
+                                font-weight: 400;
+                                font-size: 16px;
+                                line-height: 24px;
+                            }
+
+                            .breadcrumb {
+                                display: flex;
+                                align-items: center;
+                                padding-top: 17px;
+                                gap: 9px;
+                                font-size: 12px;
+                                font-weight: 400;
+                                line-height: 18px;
+
+                                ion-col {
+                                    padding: 0px;
+                                }
+
+                                .active {
+                                    color: #1773B0;
+                                }
+
+                                ion-img {
+                                    width: 10px;
+                                    height: 10px;
+                                }
+                            }
+                        }
+
+                        .divider {
+                            background-color: #f2f2f2;
+                            height: 1px;
+                            padding: 0px;
+                        }
+
+                        .container {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: flex-start;
+                            gap: 32px;
+
+                            .form-section {
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: flex-start;
+                                gap: 8px;
+
+                                .info {
+                                    font-size: 20px;
+                                    font-weight: 700;
+                                    line-height: 32px;
+                                }
+
+                                .input-field-group {
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 24px;
+                                    font-size: 14px;
+                                    color: #344054;
+
+                                    .input-field {
+                                        display: flex;
+                                        flex-direction: column;
+                                        gap: 6px;
+                                        ion-label {
+                                            line-height: 20px;
+                                            font-weight: 500;
+                                            font-size: 14px;
+                                            color: #344054;
+                                            &.bold {
+                                                font-weight: bold;
+                                                font-size: 20px;
+                                                line-height: 32px;
+                                            }
+                                        }
+                                    }
+                                }
+
+                            }
+                        }
+                    }
+                }
+
+                &.summary {
+                    background-color: #f1edfe;
+                    max-width: 400px;
+                    padding: 32px;
+                    box-sizing: border-box;
+                    text-align: left;
+                    font-size: 20px;
+
+                    @media only screen and (max-width: 670px) {
+                        max-width: 100%;
+                        width: 100%;
+                    }
+
+                    .header {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        padding: 1px 0;
+                        gap: 4px;
+
+                        .title {
+                            font-weight: 700;
+                            font-size: 20px;
+                            line-height: 24px;
+                        }
+
+                        .subtitle {
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 20px;
+                        }
+
+                    }
+
+                    .item-container {
+                        margin-top: 24px;
+                        border-radius: 8px;
+                        background-color: white;
+                        display: flex;
+                        flex-direction: column;
+                        padding: 16px 16px 40px;
+                        gap: 12px;
+                        font-size: 16px;
+
+                        .item {
+                            display: flex;
+                            justify-content: space-between;
+
+                            .quantity {
+                                font-size: 12px;
+                                color: #838383;
+
+                            }
+
+                        }
+                    }
+
+                    .duration {
+                        text-align: end;
+                        line-height: 16px;
+                        font-size: 12px;
+                        color: #838383;
+                    }
+
+                    .price-summary {
+                        font-size: 16px;
+
+                        b {
+                            margin-left: 4px;
+                        }
+                    }
+
+                    .divider {
+                        background-color: #cdcdcd;
+                        height: 1px;
+                        padding: 0px;
+                    }
+
+                    .order-summary {
+                        margin-top: 24px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 21px;
+
+                        .moneyline {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 11px;
+                        }
+
+                        .price {
+                            align-self: stretch;
+                            display: flex;
+                            flex-direction: row;
+                            align-items: flex-start;
+                            justify-content: space-between;
+                            gap: 17px;
+
+                            .label {
+                                flex: 1;
+                                font-size: 14px;
+                            }
+
+                            .label2 {
+                                font-size: 17px;
+                                color: #333;
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+}

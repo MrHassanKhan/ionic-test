@@ -1,0 +1,178 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>
+      <img class="logo-icon" alt="" src="../../assets/logo1.svg">
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">
+        <img class="logo-icon" alt="" src="../../assets/logo1.svg">
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+
+  <ion-grid class="subscribe">
+    <ion-row>
+      <ion-col class="subscribe">
+        <ion-row class="form">
+          <ion-col size="12" class="header">
+            <div class="title">Subscribe</div>
+            <div class="subtitle">to our Monthly Surprise Box</div>
+            <ion-row class="breadcrumb">
+              <ion-col class="active">Cart</ion-col>
+              <ion-col>
+                <ion-img src="../../assets/subscribe/-chevronright.svg"></ion-img>
+              </ion-col>
+              <ion-col>Information</ion-col>
+              <ion-col>
+                <ion-img src="../../assets/subscribe/-chevronright.svg"></ion-img>
+              </ion-col>
+              <ion-col>Shipping</ion-col>
+              <ion-col>
+                <ion-img src="../../assets/subscribe/-chevronright.svg"></ion-img>
+              </ion-col>
+              <ion-col>Payment</ion-col>
+            </ion-row>
+          </ion-col>
+          <ion-col size="12" class="divider"></ion-col>
+          <ion-col size="12" class="container">
+            <div class="form-section">
+              <b class="info">Contact Information</b>
+              <div class="input-field-group">
+                <div class="input-field">
+                  <ion-label>Your Name</ion-label>
+                  <ion-input class="subscribe2" aria-label="name" placeholder="e.g Osama Alshathri"></ion-input>
+                </div>
+                <div class="input-field">
+                  <ion-label>Email</ion-label>
+                  <ion-input class="subscribe2" aria-label="email" placeholder="osama@gmail.com"></ion-input>
+                </div>
+              </div>
+            </div>
+            <div class="form-section">
+              <b class="info">Child’s Information</b>
+              <div class="input-field-group">
+                <div class="input-field">
+                  <ion-label>Child’s Full Name</ion-label>
+                  <ion-input class="subscribe2" aria-label="name" placeholder="e.g Sarah Mohammad"></ion-input>
+                </div>
+                <div class="input-field">
+                  <ion-label>Child’s Date of Birth</ion-label>
+                  <div class="flex flex-row gap-7xs">
+                    <ion-select class="primary" placeholder="Date" interface="popover">
+                      <ion-select-option value="1">1</ion-select-option>
+                      <ion-select-option value="2">2</ion-select-option>
+                      <!-- Add options for all dates -->
+                    </ion-select>
+                    <ion-select class="primary" placeholder="Month" interface="popover">
+                      <ion-select-option value="1">January</ion-select-option>
+                      <ion-select-option value="2">February</ion-select-option>
+                      <!-- Add options for all months -->
+                    </ion-select>
+                    <ion-select class="primary" placeholder="Year" interface="popover">
+                      <ion-select-option value="2000">2000</ion-select-option>
+                      <ion-select-option value="2001">2001</ion-select-option>
+                      <!-- Add options for all years -->
+                    </ion-select>
+                  </div>
+                </div>
+                <div class="input-field">
+                  <ion-label>Grade</ion-label>
+                  <ion-select class="primary" placeholder="e.g Grade 2" interface="popover">
+                    <ion-select-option value="1">Grade 1</ion-select-option>
+                    <ion-select-option value="2">Grade 2</ion-select-option>
+                    <!-- Add options for all dates -->
+                  </ion-select>
+                </div>
+                <div class="input-field">
+                  <ion-label>Gender</ion-label>
+                  <ion-radio-group class="flex flex-row gap-5xs primary" [allowEmptySelection]="true" value="boy">
+                    <ion-radio value="boy">Boy</ion-radio>
+                    <ion-radio value="girl">Girl</ion-radio>
+                  </ion-radio-group>
+                </div>
+                <div class="input-field">
+                  <ion-label class="bold">As a parent select any 3 topics</ion-label>
+                  <div class="flex flex-row gap-5xs">
+                    <ion-chip [outline]="true">Arabic</ion-chip>
+                    <ion-chip [outline]="true">Islamic</ion-chip>
+                    <ion-chip [outline]="true">English</ion-chip>
+                    <ion-chip [outline]="true">History</ion-chip>
+                    <ion-chip [outline]="true" color="tertiary">Sports</ion-chip>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ion-col>
+        </ion-row>
+        <ion-button class="primary">Continue to payment</ion-button>
+      </ion-col>
+      <ion-col class="summary">
+        <ion-col size="12" class="header">
+          <div class="title">Summary</div>
+          <div class="subtitle">of your Monthly Surprise Box</div>
+        </ion-col>
+        <ion-col size="12" class="item-container">
+          <div class="item">
+            <div class="item-name">
+              <b>Mystery Box</b>
+              <div class="quantity">X 1</div>
+            </div>
+            <div class="item-price">
+              <div class="price-summary">
+                <span>SAR</span>
+                <b>456</b>
+              </div>
+              <div class="duration">
+                Monthly
+              </div>
+            </div>
+          </div>
+        </ion-col>
+        <ion-col size="12" class="order-summary">
+          <div class="moneyline">
+            <div class="price">
+              <div class="label">Subtotal</div>
+              <div class="price-summary">
+                <span>SAR </span>
+                <b>456</b>
+              </div>
+            </div>
+            <div class="price">
+              <div class="label">Shipping</div>
+              <div class="duration">
+                Free
+              </div>
+            </div>
+            <div class="price">
+              <div class="label">Taxes</div>
+              <div class="price-summary">
+                <span>SAR </span>
+                <b>4.0</b>
+              </div>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="price">
+            <div class="label2">Total</div>
+            <div class="item-price">
+              <div class="price-summary">
+                <span>SAR</span>
+                <b>456</b>
+              </div>
+              <div class="duration">
+                Monthly
+              </div>
+            </div>
+          </div>
+        </ion-col>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>
