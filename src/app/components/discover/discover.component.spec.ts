@@ -3,6 +3,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { DiscoverComponent } from './discover.component';
 import { IonicModule } from '@ionic/angular';
+import { ActivatedRoute } from '@angular/router';
 
 describe('DiscoverComponent', () => {
   let component: DiscoverComponent;
@@ -10,8 +11,14 @@ describe('DiscoverComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [DiscoverComponent],
-      imports: [IonicModule.forRoot()]
+      declarations: [],
+      imports: [DiscoverComponent, IonicModule.forRoot()],
+      providers: [
+        {
+          provide: ActivatedRoute,
+          useValue: { snapshot: { paramMap: { get: () => 'some_value' } } } // Mock ActivatedRoute
+        }
+      ]
     })
       .compileComponents();
   }));

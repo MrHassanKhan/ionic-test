@@ -8,7 +8,7 @@ describe('SubscribePage', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [SubscribePage],
+      declarations: [],
       imports: [IonicModule.forRoot()]
     }).compileComponents();
     fixture = TestBed.createComponent(SubscribePage);
@@ -53,7 +53,7 @@ describe('SubscribePage', () => {
   });
 
   it('should have a "Continue to payment" button', () => {
-    const button: HTMLElement = fixture.nativeElement.querySelector('.primary');
+    const button: HTMLElement = fixture.nativeElement.querySelector('ion-button.primary');
     expect(button).toBeTruthy();
     expect(button.textContent).toContain('Continue to payment');
   });

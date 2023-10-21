@@ -2,15 +2,22 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { HomePage } from './home.page';
 import { IonicModule } from '@ionic/angular';
+import { ActivatedRoute } from '@angular/router';
 
 describe('HomePage', () => {
   let component: HomePage;
   let fixture: ComponentFixture<HomePage>;
 
   beforeEach(async () => {
-    TestBed.configureTestingModule({
-      declarations: [HomePage],
-      imports: [IonicModule.forRoot()]
+    await TestBed.configureTestingModule({
+      declarations: [],
+      imports: [HomePage, IonicModule.forRoot()],
+      providers: [
+        {
+          provide: ActivatedRoute,
+          useValue: { snapshot: { paramMap: { get: () => 'some_value' } } } // Mock ActivatedRoute
+        }
+      ]
     }).compileComponents();
 
     fixture = TestBed.createComponent(HomePage);
